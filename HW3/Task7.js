@@ -6,8 +6,6 @@ getDivisors('Content'); // Error: parameter type is not a Number
 getDivisors(0); // Error: parameter can't be a 0 */
 
 a = 12;
-b = 0;
-c = 'Content';
 var arr= [];
 
 function getDivisors () {
