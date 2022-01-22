@@ -24,22 +24,17 @@ var i=0;
 
 function f() {
     if (arr.length===0) {
-        throw new Error ('Error: parameter can\'t be an empty');
-    } else {
-        if (typeof arr === 'string') {
-            throw new Error ('Error: parameter type should be an array');
-        } else {
-            if (typeof arr === 'number'){
-                throw new Error ('Error: parameter type should be an array');
-            } else {
-            if (i<arr.length) {
-                console.log(arr[i]);
-                i++;
-                f();
-            }}
+      throw new Error ('Error: parameter can\'t be an empty');
+      } else if (typeof arr === 'string') {
+        throw new Error ('Error: parameter type should be an array');
+        } else if (typeof arr === 'number') {
+          throw new Error ('Error: parameter type should be an array');
+          } else if (i<arr.length) {
+            console.log(arr[i]);
+            i++;
+            f();
             }
-        }
-    }
+}
 
 
 f(arr);
