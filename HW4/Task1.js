@@ -21,4 +21,4 @@ function forEach(arr, callback) {
 
 forEach (arr, function (item, i, arr) {
     console.log('Индекс ' + item + ': Значение ' + i + ' из массива [' + arr + ']');
-})
+});
