@@ -7,7 +7,7 @@ filter(arr, function(item, i, arr) {});
 */
 //'use strict'
 
-const arr = [10,-2,300];
+const arr = [1,2,3];
 
 function filter(arr, callback) {
     var newArray=[];
@@ -28,7 +28,6 @@ function filter(arr, callback) {
 
 
 var filtered=filter(arr, function(item, i, arr) {
-    return item>0;
-    console.log('Индекс ' + item + ': Значение ' + i + ' из массива [' + arr + ']');
+    return item>1;
 });
 console.log(filtered);
