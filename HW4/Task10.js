@@ -11,7 +11,10 @@ console.log('Массив до применения функции reverse [' + 
 function reverse(arr) {
     if (!Array.isArray(arr)) {
         throw new Error('Error: parametr must be an array');
-    }    
+    }
+    if (arr.length===0) {
+        throw new Error('Error: array must not be empty');
+    }
     for (var i=0; i<arr.length/2;i++) {
         var a=arr[i];
         var b=arr[arr.length-i-1];
